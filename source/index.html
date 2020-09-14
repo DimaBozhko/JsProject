@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru"> 
+  <title>DVS</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrapper"> 
+    <div class="menu">
+      <div class="menu__item hide">меню 1</div>
+      <div class="menu__item hide">меню 2</div>
+      <div class="menu__item hide">меню 3</div>
+    </div>
+    <div class="menu-content-wrapper">
+      <div class="menu-content menu-content--border hide">
+        <p class="menu-content__text start-dvs"> Оберіть відділ ДВС <span class="triangle "></span></p>
+        <p class="menu-content__text dvs hide"> Київська ДВС</span></p>         <!-- Київський -->
+        <p class="menu-content__text dvs hide"> Московська ДВС</span></p>       <!-- Московський-->
+        <p class="menu-content__text dvs hide"> Шевченківська ДВС</span></p>    <!-- Шевченківський -->
+        <p class="menu-content__text dvs hide"> Жовтнева ДВС</span></p>         <!-- Жовтн + Ленінська -->
+        <p class="menu-content__text dvs hide"> Ленінська ДВС</span></p>        <!-- Жовтн + Ленінська -->
+        <p class="menu-content__text dvs hide"> Комінтернівська ДВС</span></p>  <!-- Комінтерн + Червон -->
+        <p class="menu-content__text dvs hide"> Червонозаводська ДВС</span></p> <!-- Комінтерн + Червон -->
+        <p class="menu-content__text dvs hide"> Фрунзенська ДВС</span></p>      <!-- Фрунзенська + Орджо -->
+        <p class="menu-content__text dvs hide"> Орджонікідзевська ДВС</span></p> <!-- Фрунзенська + Орджо -->
+      </div> 
+      <div class="menu-content hide">
+         <div class="menu-content__item menu-content__text">Введіть номер справи</div>
+         <input class="menu-content__item menu-content__inp case-number-inp" type="text">
+         <div class="menu-content__item menu-content__text">Введіть ПІБ боржника</div>
+         <input class="menu-content__item menu-content__inp debtor-name" type="text">
+         <div class="menu-content__item menu-content__text">Введіть дату народження боржника</div>
+         <input class="menu-content__item menu-content__inp debtor-birthday" type="text"> 
+         <div class="menu-content__item menu-content__text">Введіть ІПН боржника</div>
+         <input class="menu-content__item menu-content__inp debtor-ipn" type="text">
+         <div class="menu-content__item menu-content__text">Введіть адресу боржника</div>
+         <input class="menu-content__item menu-content__inp debtor-address" type="text">            
+      </div>
+      <div class="menu-content hide">
+         <div class="menu-content__item menu-content__text">Введіть суму основного боргу</div>
+         <input class="menu-content__item menu-content__inp sum-osnov-inp" type="text">  
+         <div class="menu-content__item menu-content__text">Введіть інфляційні витрати</div>
+         <input class="menu-content__item menu-content__inp infl-inp" type="text">  
+         <div class="menu-content__item menu-content__text">Введіть три відсотка річних</div>
+         <input class="menu-content__item menu-content__inp tree-percent-inp" type="text">
+         <div class="menu-content__item menu-content__text">Введіть судовий збір</div>
+         <input class="menu-content__item menu-content__inp court-tax-inp" type="text">  
+         <div class="menu-content__item menu-content__text">Введіть загальну суму прописом</div>
+         <input class="menu-content__item menu-content__inp arrears-word-inp" type="text"> 
+      </div>
+    </div>
+    <header class="header">
+      <div class="destination">
+        <div class="destination__item hide">
+          <div>До Київського відділу Державної виконавчої служби у місті Харкові 
+          Східного міжрегіонального управління Міністерства юстиції (м. Харків)</div>
+          <div>61024, м. Харків, вул. Студентська, 5/6 </div>
+        </div> <!-- Київський -->
+        <div class="destination__item hide">
+          <div>До Московського відділу Державної виконавчої служби у місті Харкові 
+                Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61005, м. Харків, Майдан Захисників України, будинок 7/8</div>
+        </div> <!-- Московський-->
+        <div class="destination__item hide">
+          <div>До Шевченківського відділу Державної виконавчої служби у місті Харкові 
+                Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61022, м. Харків, Майдан Свободи, будинок 5, Держпром, 6 під'їзд, 10 поверх</div> 
+        </div> <!-- Шевченківський -->
+        <div class="destination__item hide">
+          <div>До Міжрайонного відділу державної виконавчої служби по Холодногірському та
+               Новобаварському районах у місті Харкові Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61004, м. Харків, вул. Москалівська, буд. 58</div>
+        </div> <!-- Жовтн -->
+        <div class="destination__item hide">
+          <div>До Міжрайонного відділу державної виконавчої служби по Холодногірському та
+               Новобаварському районах у місті Харкові Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61004, м. Харків, вул. Москалівська, буд. 58</div>
+        </div> <!-- Ленінська -->
+        <div class="destination__item hide">
+          <div>До Міжрайонного відділу державної виконавчої служби по Основ'янському та
+               Слобідському районах у місті Харкові Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61001, м. Харків, Майдан Захисників України, будинок 7/8</div>
+        </div> <!-- Комінтернівська -->
+        <div class="destination__item hide">
+          <div>До Міжрайонного відділу державної виконавчої служби по Основ'янському та
+               Слобідському районах у місті Харкові Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61001, м. Харків, Майдан Захисників України, будинок 7/8</div>
+        </div> <!-- Червон -->
+        <div class="destination__item hide">
+          <div>До Міжрайонного відділу державної виконавчої служби по Індустріальному та
+               Немишлянському районах у місті Харкові Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61022, м. Харків, Майдан Свободи, буд. 5, Держпром, під'їзд 1, поверх 6</div>
+        </div> <!-- Фрунзенська -->
+        <div class="destination__item ">
+          <div>До Міжрайонного відділу державної виконавчої служби по Індустріальному та
+               Немишлянському районах у місті Харкові Східного міжрегіонального управління Міністерства юстиції (м. Харків)
+          </div>
+          <div>61022, м. Харків, Майдан Свободи, буд. 5, Держпром, під'їзд 1, поверх 6</div>
+        </div> <!-- Орджо -->
+      </div>
+      <div class="sender">
+        <div>
+          <div>Стягувач: товариство з обмеженою відповідальністю
+          «КОМУН СЕРВІС»</div>
+          <div>адреса: 61124, м. Харків, вул. Лісова, буд. 27</div>
+          <div>Представник ТОВ "КОМУН СЕРВІС"</div>
+          <div>Шевченко Тарас Григорович,</div>
+          <div>що діє на підставі довіреності б/н</div> 
+          <div>від 10 квітня 2020 року</div>  
+          <div>тел: +38(099)-11-11-111</div>                 
+      </div>
+    </header>
+    <main class="main">
+      <p class="headline"><span>Заява</span> про відкриття виконавчого провадження</p>
+      <p class="main-text"><span class="abz">
+        </span>Прошу прийняти до виконання судовий наказ 
+        <b><span class="court-name">Київського</span></b> районного суду м. Харкова по справі
+        <b><span class="case-number">№693/1865/20</span></b>
+        про стягнення з 
+        <b><span class="debtor">ПІБ</span></b>
+        (<span class="birthday">11.01.1981 р.н.,</span>
+        ІПН <span class="ipn"></span>, 
+        адреса: <span class="address"></span>)
+        на користь ТОВ «КОМУН СЕРВІС» (адреса: 61124, м. Харків, вул. Лісова, буд. 27, код ЄДРПОУ 81155111) заборгованості в розмірі 
+        <b><span class="arrears-grn"></span>
+        (<span class="arrears-word"></span>) грн.
+        <span class="arrears-kop"></span> коп.</b>
+        з яких:<br>
+        <span class="abz"></span>- <span class="sum-osnov-grn"></span> грн. <span class="sum-osnov-kop"></span> коп. - сума основного боргу;<br>
+        <span class="abz"></span>- <span class="infl-grn"></span> грн. <span class="infl-kop"></span> коп. - інфляційні витрати;<br>
+        <span class="abz"></span>- <span class="tree-percent-grn"></span> грн. <span class="tree-percent-kop"></span> коп. - три відсотки річних;<br>
+        <span class="abz"></span>- <span class="court-tax-grn"></span> грн. <span class="court-tax-kop"></span> коп. - судовий збір;<br>
+        <!-- <span class="abz"></span>Відповідно до ЗУ «Про виконавче провадження» від 02.06.2016 р. №1404-VIII, з метою повного та своєчасного виконання рішення суду, також прошу:<br>
+        
+        <span class="one">1.  Винести постанову про відкриття виконавчого провадження не пізніше наступного робочого дня після одержання виконавчого документа (ч. 5 ст. 26).</span><br>
+        <span class="one">2.  Під час відкриття виконавчого провадження винести постанову про арешт майна (коштів) боржника (ч. 2, 4 ст. 56).</span><br>
+        <span class="one">3.  Встановити майно боржника, яке знаходиться в інших осіб, а також майно та кошти, що належать боржнику від інших осіб (ст. 53).</span><br>
+        <span class="one">4.  Провести перевірку майнового стану боржника у 10-денний строк з дня відкриття виконавчого провадження. У подальшому здійснювати таку перевірку не рідше ніж один раз на три місяці (ч. 8 ст. 48).</span><br>
+        <span class="one">5.  Здійснити реєстрацію обтяжень майна боржника (п. 8 ч. 3 ст. 18).</span><br>-->
+        <span class="abz"></span>Стягнуті з боржника кошти перераховувати за реквізитами: одержувач – ТОВ «КОМУН СЕРВІС», РНОКПП 2222222, Розрахунковий рахунок UA43 0000 0000 0000 0000 0000 0000 0 
+        АТ «Кредит Банк», МФО 111111, код ЄДРПОУ банку 33333333.<br>
+        <span class="abz"></span> Копію постанови про відкриття виконавчого провадження прошу надіслати листом  на адресу: 61124, м. Харків, вул. Лісова, буд. 27.<br>
+        <span class="docs">Додатки:</span><br>
+        <span class="abz"></span>1. Оригінал судового наказу <b><span class="court-name">Червонозаводського</span></b> районного суду м. Харкова по справі <span class="case-number">№646/4956/19</span>. <br>
+        <span class="abz"></span>2. Завірена копія довіреності представника стягувача.<br>
+      </p>
+      <div class="sign">
+        <div class="sign-wrapper">
+          <p class="sign__item">Представник</p>
+          <p class="sign__item">ТОВ "КОМУН СЕРВІС</p>        
+        </div>
+        <p class="signatory"> _______________ Шевченко Т.Г.</p>
+      </div>
+    </main>
+  </div>
+  
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

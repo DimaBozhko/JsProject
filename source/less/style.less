@@ -1,0 +1,27 @@
+@import url("base/variables.less");
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 21cm;
+  box-sizing: border-box;
+}
+
+@import url("menu/menu.less");
+@import url("header/header.less");
+@import url("main/main.less");
+@media print {
+  .break {
+    PAGE-BREAK-AFTER: always;
+    visibility: hidden;
+  }
+}
+
+.hide {
+  display: none;
+}
+.abz {
+  padding-left: 1cm;
+}
+ 
